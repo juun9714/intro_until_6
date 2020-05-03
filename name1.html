@@ -1,13 +1,23 @@
 <!doctype html>
 
 <head>
+    <script src="http://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <title>Name</title>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Lemon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Lemon&display=swap" rel="stylesheet">
   <style>
     a
     {
       text-decoration:none;
       color:white;
+      text-align:center;
     }
     h1
     {
@@ -54,13 +64,26 @@
       color:black;
       text-shadow:2px 1.5px gray;
     }
+    .panel-footer
+      {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        text-align:center;
+        background-color: #A99AD4;
+        color:white;
+        font-family: 'Bangers', cursive;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Lemon', cursive;
+        text-shadow:2px 1.5px gray;
+      }
   </style>
 </head>
 
 <body>
-  <h1><a href="assignment.html">Introduce Myself : JUNE</a></h1>
+  <h1><a href="index.html">Introduce Myself : JUNE</a></h1>
   <div id="grid">
-    <ol>
+    <ol class="nav nav-pills nav-stacked">
       <li><a href="name.html" class="list">Name</a></li>
       <li><a href="Hobby.html" class="list">Hobby</a></li>
       <li><a href="Family.html" class="list">Family</a></li>
@@ -73,4 +96,5 @@
       as transformed version of my name.</br></br>
     </div>
   </div>
+  <div class="panel-footer">Made by June<br>LikeLion x SKKU</div>
 </body>
