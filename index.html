@@ -64,13 +64,47 @@
           font-family: 'Abril Fatface', cursive;
           font-family: 'Lemon', cursive;
         }
+        #bttn{
+          font-size: 15px;
+          color:black;
+          position:absolute;
+          top:1px;
+          left:48%;
+        }
     </style>
 </head>
 
 
 <body>
+  <input type="button" id="bttn" value="night" onclick="
+        var target=document.querySelector('body')
+        var target2=document.querySelector('#paragraph')
+        var array=document.querySelectorAll('a')
+        if(this.value==='night'){
+            target.style.backgroundColor='black';
+            target.style.color='gray';
+            target2.style.color='gray';
+            this.value='day';
+            var i=0;
+            while(i<array.length){
+                array[i].style.color='gray';
+                i=i+1;
+            }
+        }else{
+            target.style.backgroundColor='#A99B3A';
+            target.style.color='black';
+            target2.style.color='white';
+            this.value='night';
+            var i=0;
+            while(i<array.length){
+                array[i].style.color='white';
+                i=i+1;
+            }
+        }    
+      ">
 
-<h1><a href="index.html">Introduce Myself : JUNE</a></h1>
+<br><h1><a href="index.html">Introduce Myself : JUNE</a></h1>
+
 
 <script src="script.js"></script>
 <div id="grid">
