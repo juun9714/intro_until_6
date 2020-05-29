@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="content">
+        <div class="window">
+            <div id="clock">
+                <h3>CLOCK</h3>
+                <h1>00:00:00</h1>
+            </div>
+
+            <div id="stopwatch">
+                <h3>STOPWATCH</h3>
+                <h1>00:00</h1>
+                <input id="start" type="button" value="start">
+                <input id="reset" type="button" value="reset">
+            </div>
+            <div id="timer">
+                <h3>TIMER</h3>
+                <h1>00:00</h1>
+                <input id="timer_m" type="number">분
+                <input id="timer_s" type="number">초
+                <input id="timer_start" type="button" value="start">
+                <input id="timer_reset" type="button" value="reset">
+            </div>
+            
+
+        </div>
+        <div class="select">
+            <input id ="selectClock" type=radio name="select" checked>
+            <input id ="selectStop" type=radio name="select">
+            <input id ="selectTimer" type=radio name="select">
+        </div>
+    </div>
+    
+    <script src="tab.js"></script>
+    <script src="clock.js"></script>
+    <script src="stop.js"></script>
+</body>
+</html>   
