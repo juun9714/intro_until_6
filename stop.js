@@ -28,13 +28,14 @@ let stopfunc=function(){
 let a;
 startbtn.onclick = function(){
 
-    let cur=document.querySelector('#start').textContent;
+    let cur=document.querySelector('#start').value;
     if(cur==='start'){
-        document.querySelector('#start').textContent='stop';
+        document.querySelector('#start').value='stop';
         a=setInterval(stopfunc,1000);
     }else{
-        document.querySelector('#start').textContent='start';
+        document.querySelector('#start').value='start';
         clearInterval(a);
+
     }
 }
 
@@ -42,4 +43,5 @@ rstbtn.onclick=function(){
     timelap=0;
     let timeshow=document.querySelector('#stopwatch h1');
     timeshow.textContent='00:00';
+    clearInterval(a);
 }

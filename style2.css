@@ -30,4 +30,5 @@ h3{
 }
 body{
     background-image: url(back.jpeg);
+    background-size: cover;
 }
